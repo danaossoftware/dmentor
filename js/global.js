@@ -1,0 +1,1 @@
+const SERVER_URL = "http://dmentor.id/dmentor/php/";
