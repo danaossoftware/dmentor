@@ -1,24 +1,43 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/global.css" rel="stylesheet">
 		<script src="js/jquery.js"></script>
 		<script>
 			$(document).ready(function() {
-				$.ajax({
-					type: 'GET',
-					url: 'http://sainsgo.com/maskitbackend/php/check-session.php',
-					dataType: 'text',
-					cache: false,
-					success: function(a) {
-						alert(a);
-						var responseCode = parseInt(a);
-						if (responseCode == 0) {
-							window.location.href = "home.html";
-						} else if (responseCode == -1) {
-							window.location.href = "login.html";
+				setTimeout(function() {
+					$.ajax({
+						type: 'GET',
+						url: 'http://sainsgo.com/maskitbackend/php/check-session.php',
+						dataType: 'text',
+						cache: false,
+						success: function(a) {
+							alert(a);
+							var responseCode = parseInt(a);
+							if (responseCode == 0) {
+								window.location.href = "home.html";
+							} else if (responseCode == -1) {
+								window.location.href = "login.html";
+							}
 						}
-					}
-				});
+					});
+				}, 3000);
 			});
 		</script>
 	</head>
+	<body>
+		<div style="background-color: #7f8c8d; width: 100%; height: 100%; position: relative; overflow-x: hidden!important">
+			<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+				<img src="img/logo.png" width="200px" height="80px">
+			</div>
+			<div style="width: 100%; display: flex; flex-flow: column nowrap; position: absolute; left: 0; bottom: 0;">
+				<div style="width: 100%; display: flex; justify-content: center; text-align: center; color: #cccccc;">
+					DDT version 1.0
+				</div>
+				<div style="width: 100%; display: flex; justify-content: center; text-align: center; color: #cccccc; margin-top: 0; margin-bottom: 10px;">
+					dMentor Diagnostic Test
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
