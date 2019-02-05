@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/global.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/profile.js"></script>
+</head>
+<body>
+<div style="width: 100%; height: 100%; position: relative; overflow-x: hidden!important;">
+    <div style="position: absolute; left: 0; top: 0; width: 100%; display: flex; flex-flow: column nowrap;">
+        <div style="background-color: #3498db; width: 100%; padding-top: 25px; padding-bottom: 25px; display: flex; justify-content: center;">
+            <img src="img/logo.png" width="140px" height="80px">
+        </div>
+        <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center; align-items: center; align-content: center;">
+            <div style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; width: 100px; height: 40px; border: 2px solid #838483; background-color: #838483; display: flex; justify-content: center; align-items: center; color: white;">
+                Profil
+            </div>
+            <div style="border-top-right-radius: 5px; border-bottom-right-radius: 5px; width: 100px; height: 40px; border: 2px solid #838483; background-color: #ffffff; display: flex; justify-content: center; align-items: center; color: #444444;">
+                Statistik
+            </div>
+        </div>
+        <div style="position: relative; margin-top: 30px;">
+            <div id="profile" style="position: absolute; left: 0; top: 0; width: 100%; display: flex; flex-flow: column nowrap; align-items: center;">
+                <img src="img/profile-picture.png" width="150px" height="150px" style="border-radius: 50%;">
+                <div style="color: black; font-size: 20px; margin-top: 20px; font-family: PalanquinBold;">Nama</div>
+                <div style="color: black; font-size: 20px; margin-top: -10px; font-family: PalanquinBold;">2019430052</div>
+                <div style="color: black; margin-top: 5px;"><span style="font-family: PalanquinBold">Universitas:</span> VIP PTN Jogjakarta</div>
+                <div style="color: black; margin-top: 0;"><span style="font-family: PalanquinBold">Member since:</span> 20 Oktober 2018</div>
+                <button onclick="editProfile()" class="button1" style="margin-botom: 70px; margin-top: 15px; padding-left: 40px; padding-right: 40px;">Edit Profil</button>
+            </div>
+        </div>
+    </div>
+    <div style="position: fixed; left: 0; bottom: 0; width: 100%; height: 50px; box-shadow: 0 -4px 8px rgba(0, 0, 0, .4); background-color: white; display: flex; flex-flow: row nowrap; justify-content: space-around;">
+        <div style="width: 25%; display: flex; justify-content: center; align-items: center;">
+            <img src="img/home.png" width="25px" height="25px">
+        </div>
+        <div style="width: 25%; display: flex; justify-content: center; align-items: center;">
+            <img src="img/messages.png" width="25px" height="25px">
+        </div>
+        <div style="width: 25%; display: flex; justify-content: center; align-items: center;">
+            <img src="img/notification.png" width="25px" height="25px">
+        </div>
+        <div style="width: 25%; display: flex; justify-content: center; align-items: center;">
+            <img src="img/user-3.png" width="25px" height="25px">
+        </div>
+    </div>
+</div>
+</body>
+</html>

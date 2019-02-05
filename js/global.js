@@ -1,4 +1,4 @@
-const SERVER_URL = "http://localhost/dmentor/php/";
+const SERVER_URL = "http://dmentor.id/dmentor/php/";
 
 function show(msg) {
     var os = getMobileOperatingSystem();

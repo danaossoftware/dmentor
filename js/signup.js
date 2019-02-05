@@ -50,7 +50,7 @@ function signup() {
         success: function(a) {
             console.log(a);
             hideLoadingDialog();
-            window.location.href = "home.html";
+            window.location.href = "profile.html";
         }
     });
 }

@@ -148,3 +148,55 @@ input[type="radio"]:checked + label.circle span.small {
 .radio-input {
 	display: none;
 }
+
+.input1 {
+	width: 87%;
+	background-color: #eeeeee;
+	height: 30px;
+	border-radius: 1px;
+	border: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.button4 {
+	background-color: #2270f3;
+	color: white;
+	height: 40px;
+	border-radius: 20px;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 17px;
+	cursor: pointer;
+	transition: background-color .1s;
+}
+
+.button4:hover {
+	background-color: #226cdf;
+}
+
+.button4:active {
+	background-color: #1b5bc7;
+}
+
+.button5 {
+	background-color: #e74c3c;
+	color: white;
+	border-radius: 20px;
+	border: 0;
+	height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 17px;
+	cursor: pointer;
+	transition: background-color .1s;
+}
+
+.button5:hover {
+	background-color: #d04536;
+}
+
+.button5:active {
+	background-color: #b43a2d;
+}

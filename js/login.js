@@ -21,7 +21,7 @@ function login() {
                 $("#error").html("Kata sandi salah");
                 $("#error").show();
             } else if (a == 0) {
-                window.location.href = "home.html";
+                window.location.href = "profile.html";
             }
         }
     });

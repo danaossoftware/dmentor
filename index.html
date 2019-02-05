@@ -8,13 +8,13 @@
 				setTimeout(function() {
 					$.ajax({
 						type: 'GET',
-						url: 'http://localhost/dmentor/php/check-session.php',
+						url: 'http://dmentor.id/dmentor/php/check-session.php',
 						dataType: 'text',
 						cache: false,
 						success: function(a) {
 							var responseCode = parseInt(a);
 							if (responseCode == 0) {
-								window.location.href = "home.html";
+								window.location.href = "profile.html";
 							} else if (responseCode == -1) {
 								window.location.href = "login.html";
 							}
