@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/global.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/signup.js"></script>
+</head>
+<body>
+<div style="width: 100%; height: 100%; position: relative; overflow-x: hidden!important;">
+<div class="main-container" style="">
+    <div style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-image: url('img/login-bg.jpg'); background-attachment: fixed; background-size: cover; object-fit: cover; background-position: center center;"></div>
+    <div style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(27, 43, 60, .9);"></div>
+    <div style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; flex-flow: column nowrap; align-items: center;">
+        <img src="img/logo.png" width="150px" height="80px" style="margin-top: 80px;">
+        <div style="flex-shrink: 0; position: relative; margin-top: 50px; height: 40px; width: 100%;">
+            <input id="name" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="Nama Lengkap">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/user.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input id="birthday" type="date" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="Tanggal Lahir">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/birthday.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input id="address" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="Alamat">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/map.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input id="phone" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="No. Telepon">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/phone.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input id="parent-phone" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="No. Telepon Orangtua">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/phone.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="position: relative; margin-top: 10px; height: 100px; width: 100%;">
+            <div style="margin-left: 30px; color: white; font-family: PalanquinBold;">Jenis Kelamin:</div>
+            <input class="radio-input" type="radio" checked="" value="one" id="gender-male" name="item">
+            <label class="radio" for="gender-male" style="margin-left: 30px;">
+                <span class="big">
+                <span class="small"></span>
+                </span>Laki-Laki
+            </label>
+            <input class="radio-input" type="radio" checked="" value="one" id="gender-female" name="item">
+            <label class="radio" for="gender-female">
+                <span class="big">
+                <span class="small"></span>
+                </span>Perempuan
+            </label>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input type="date" id="graduate" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="Tanggal Lulus SMA">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/book.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input id="school-name" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="Nama Sekolah">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/book.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input id="school-address" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="Alamat Sekolah">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/book.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input id="major" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="Jurusan">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/book.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input id="email" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="Email">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/user.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="flex-shrink: 0; position: relative; margin-top: 10px; height: 40px; width: 100%;">
+            <input id="password" type="password" class="flat-input" style="position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 100%; padding-left: 50px;" placeholder="Kata sandi">
+            <div style="width: 60px; height: 100%; position: absolute; left: 20px; top: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="img/pass.png" width="15px" height="15px" style="margin-left: 10px;">
+            </div>
+        </div>
+        <div style="position: relative; margin-top: 10px; height: 100px; width: 100%;">
+            <div style="margin-left: 30px; color: white; font-family: PalanquinBold;">Pilihan Bimbel:</div>
+            <input class="radio-input" type="radio" checked="" value="one" id="course-1" name="item">
+            <label class="radio" for="course-1" style="margin-left: 30px;">
+                <span class="big">
+                <span class="small"></span>
+                </span>Regular Class PTN
+            </label>
+        </div>
+        <div style="position: relative; margin-top: 10px; height: 100px; width: 100%;">
+            <input class="radio-input" type="radio" checked="" value="one" id="course-2" name="item">
+            <label class="radio" for="course-2" style="margin-left: 30px;">
+                <span class="big">
+                <span class="small"></span>
+                </span>Regular+ PTN
+            </label>
+        </div>
+        <div style="position: relative; margin-top: 10px; height: 100px; width: 100%;">
+            <input class="radio-input" type="radio" checked="" value="one" id="course-3" name="item">
+            <label class="radio" for="course-3" style="margin-left: 30px;">
+                <span class="big">
+                <span class="small"></span>
+                </span>VIP Class PTN
+            </label>
+        </div>
+        <div style="position: relative; margin-top: 10px; height: 100px; width: 100%;">
+            <input class="radio-input" type="radio" checked="" value="one" id="course-4" name="item">
+            <label class="radio" for="course-4" style="margin-left: 30px;">
+                <span class="big">
+                <span class="small"></span>
+                </span>VIP+ PTN
+            </label>
+        </div>
+        <div style="position: relative; margin-top: 10px; height: 100px; width: 100%;">
+            <input class="radio-input" type="radio" checked="" value="one" id="course-5" name="item">
+            <label class="radio" for="course-5" style="margin-left: 30px;">
+                <span class="big">
+                <span class="small"></span>
+                </span>First Class PTN
+            </label>
+        </div>
+        <div style="position: relative; margin-top: 10px; height: 100px; width: 100%;">
+            <input class="radio-input" type="radio" checked="" value="one" id="course-6" name="item">
+            <label class="radio" for="course-6" style="margin-left: 30px;">
+                <span class="big">
+                <span class="small"></span>
+                </span>Regular Class POLRI
+            </label>
+        </div>
+        <div style="position: relative; margin-top: 10px; height: 100px; width: 100%;">
+            <input class="radio-input" type="radio" checked="" value="one" id="course-7" name="item">
+            <label class="radio" for="course-7" style="margin-left: 30px;">
+                <span class="big">
+                <span class="small"></span>
+                </span>VIP Class POLRI
+            </label>
+        </div>
+        <div style="position: relative; margin-top: 10px; height: 100px; width: 100%;">
+            <input class="radio-input" type="radio" checked="" value="one" id="course-8" name="item">
+            <label class="radio" for="course-8" style="margin-left: 30px;">
+                <span class="big">
+                <span class="small"></span>
+                </span>First Class POLRI
+            </label>
+        </div>
+        <div id="error" style="display: none; margin-left: 35px; margin-top: 5px; color: #e74c3c; margin-bottom: -5px; font-family: 'PalanquinBold', Arial;">&nbsp;</div>
+        <button onclick="signup()" class="flat-button" style="margin-top: 10px;">DAFTAR</button>
+        <div onclick="login()" style="width: 100%; display: flex; justify-content: center; text-align: center; color: white; margin-top: 10px;">
+            Sudah punya akun? Masul di<a style="text-decoration: none; font-family: PalanquinBold; color: #3498db;">&nbsp;sini</a>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
