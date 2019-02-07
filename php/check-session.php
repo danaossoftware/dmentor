@@ -1,9 +1,6 @@
 <?php
-include 'db.php';
-include 'common.php';
-$ip = getIP();
-$results = $c->query("SELECT * FROM sessions WHERE ip='" . $ip . "'");
-if ($results && $results->num_rows > 0) {
+session_start();
+if (isset($_SESSION["dmentor_user_id"]) && $_SESSION["dmentor_user_id"] != "") {
 	echo 0;
 } else {
 	echo -1;

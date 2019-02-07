@@ -52,6 +52,10 @@ body {
 	color: white;
 }
 
+input {
+	flex-shrink: 0;
+}
+
 .flat-input::placeholder {
 	color: #eeeeee;
 }
